@@ -9,19 +9,17 @@ public class Operations {
     }
 
     public static String getOperator(String number2) throws Exception {
-        StringBuilder operation = new StringBuilder();
         for (int i = 0; i < number2.length(); i++) {
-            char sim = number2.charAt(i);
-            if (sim == '+' || sim == '-' || sim == '*' || sim == '/') {
-                operation.append(sim);
-                return operation.toString();
+            char simbol = number2.charAt(i);
+            if (simbol == '+' || simbol == '-' || simbol == '*' || simbol == '/') {
+                return "" + simbol;
             }
         }
         throw new Exception("Вы ввели не допустимый знак операции");
     }
 
     public static String summa(String number1, String number2) {
-        return number1 + number2;
+        return number1 + number2; // сложение
     }
 
     public static String difference(String number1, String number2) {

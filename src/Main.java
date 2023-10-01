@@ -27,7 +27,6 @@ public class Main {
                 switch (operation) {
                     case "*":
                         int count = Integer.parseInt(number3); // вторую строку представляю как число
-
                         if ((count < 1) || (count > 10)) {
                             throw new Exception("Вы ввели число меньше 1 или больше 10");
                         }
@@ -73,21 +72,4 @@ public class Main {
             }
         }
     }
-    }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+}
